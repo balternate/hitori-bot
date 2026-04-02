@@ -9,7 +9,7 @@ from commands import (
     help as bot_help,
     nijika, pick,
     ping, getprefix,
-    avatar, doino,
+    avatar, doino, randcaps, randcat,
     reactionroles, nijipray, incase, ticket, wordreact
 )
 
@@ -174,6 +174,20 @@ async def remove_word_react_command(ctx: discord.Interaction, word: str):
 async def list_word_react_command(ctx: discord.Interaction):
     await ctx.response.defer()
     await wordreact.slash_command_listener_list(ctx)
+
+
+@tree.command(name="randcat", description=get_string("command_desc", "randcat"))
+@app_commands.allowed_installs(guilds=True, users=True)
+@app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
+async def get_randcat(ctx: discord.Interaction, is_cat_girl: bool = False):
+    await randcat.slash_command_listener(ctx, is_cat_girl)
+
+
+@tree.command(name="randwaifu", description=get_string("command_randwaifu_desc"))
+@app_commands.allowed_installs(guilds=True, users=True)
+@app_commands.allowed_contexts(guilds=True, dms=True, private_channels=True)
+async def get_randwaifu(ctx: discord.Interaction):
+    await randwaifu.slash_command_listener(ctx)
 
 
 # MARK: On ready
