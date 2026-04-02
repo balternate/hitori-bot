@@ -57,4 +57,4 @@ word_react_messages = json_config["word_react_messages"]
 welcome_channel_id = json_config["welcome_channel_id"]
 
 ### nijipray configs
-nijipray_channel_id = json_config.get("nijipray_channel_id", 0)
+nijipray_allowed_channels = [int(ch) for ch in json_config["nijipray_allowed_channels"]]
