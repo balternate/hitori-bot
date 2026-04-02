@@ -9,7 +9,7 @@ from commands import (
     help as bot_help,
     nijika, pick,
     ping, getprefix,
-    avatar, doino, randcaps, randcat,
+    avatar, doino, randwaifu, randcat,
     reactionroles, nijipray, incase, ticket, wordreact
 )
 
