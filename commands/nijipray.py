@@ -15,7 +15,7 @@ cmd_names = ['nijipray', 'njkp', 'nijip']
 
 CMD_NAME = "nijipray"
 loca_sheet = f"loca/loca - {CMD_NAME}.csv"
-collection = MongoManager.get_collection("nijipray", config.MONGO_DB_NAME)
+collection = MongoManager.get_collection("nijipray-testing", config.MONGO_DB_NAME)
 
 tz = config.timezone
 nijipray_allowed_channels = config.nijipray_allowed_channels
