@@ -12,7 +12,7 @@
     "dũng": "Nam kì ăn phở tương đen"
   },
   "welcome_channel_id": 0,
-  "nijipray_channel_id": 36,
+  "nijipray_allowed_channels": ["1338613559214739486"],
   "settings": {
     "language": "vi",
     "timezone": "Asia/Ho_Chi_Minh"
