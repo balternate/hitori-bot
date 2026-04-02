@@ -5,9 +5,11 @@
   ],
   "banned_users": [],
   "specific_prefix": {},
-  "autoreact_emojis": {},
+  "autoreact_emojis": {},đen
   "word_react_messages": {
-    "nkc": "nam ki cho"
+    "nkc": "nam ki cho",
+    "Dũng": "Nam kì ăn phở tương đen",
+    "dũng": "Nam kì ăn phở tương đen"
   },
   "welcome_channel_id": 0,
   "nijipray_channel_id": 36,
