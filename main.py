@@ -10,7 +10,7 @@ from commands import (
     nijika, pick,
     ping, getprefix,
     avatar, doino, randwaifu, randcat,
-    reactionroles, nijipray, incase, ticket, wordreact
+    reactionroles, nijipray, incase, ticket, wordreact, devmanage
 )
 
 # MARK: import features
@@ -174,6 +174,20 @@ async def remove_word_react_command(ctx: discord.Interaction, word: str):
 async def list_word_react_command(ctx: discord.Interaction):
     await ctx.response.defer()
     await wordreact.slash_command_listener_list(ctx)
+
+
+@tree.command(name="add_mod", description=get_string("add_cmd_desc", "devmanage"))
+@app_commands.allowed_contexts(guilds=True, dms=False, private_channels=False)
+async def add_mod_command(ctx: discord.Interaction, user: discord.User):
+    await ctx.response.defer()
+    await devmanage.slash_command_listener_add(ctx, user)
+
+
+@tree.command(name="remove_mod", description=get_string("remove_cmd_desc", "devmanage"))
+@app_commands.allowed_contexts(guilds=True, dms=False, private_channels=False)
+async def remove_mod_command(ctx: discord.Interaction, user: discord.User):
+    await ctx.response.defer()
+    await devmanage.slash_command_listener_remove(ctx, user)
 
 
 @tree.command(name="randcat", description=get_string("command_desc", "randcat"))
