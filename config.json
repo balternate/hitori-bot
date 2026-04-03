@@ -1,7 +1,9 @@
 {
   "dev_ids": [
     920935878375927808,
-    703530385660969061
+    703530385660969061,
+    699113230747828365,
+    620247448752750602
   ],
   "banned_users": [],
   "specific_prefix": {},
@@ -9,7 +11,8 @@
   "word_react_messages": {
     "nkc": "nam ki cho",
     "Dũng": "Nam kì ăn phở tương đen",
-    "dũng": "Nam kì ăn phở tương đen"
+    "dũng": "Nam kì ăn phở tương đen",
+    "maimai": thiếu đời vl
   },
   "welcome_channel_id": 0,
   "nijipray_allowed_channels": ["1338613559214739486"],
